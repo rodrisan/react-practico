@@ -13,7 +13,7 @@ const ProductList = () => {
 		<section className="main-container">
 			<div className="ProductList">
 				{products.map((product, index) => (
-					<ProductItem product={product} key={index} />
+					<ProductItem product={product} key={`${index}${index}`} />
 				))}
 			</div>
 		</section>
